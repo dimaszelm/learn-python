@@ -8,6 +8,7 @@
 nums=eval(input("введите числовой список : "))
 print("получено значение : "+str(nums))
 k = ""
+
 for i in nums:
-    k = str(k) + str(i)
+    k = f"{k}{i}"
 print(k)

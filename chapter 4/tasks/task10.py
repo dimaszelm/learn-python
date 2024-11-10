@@ -4,8 +4,8 @@
 # элементов). Значениями элементов в создаваемом словаре являются мно-
 # жества из значений соответствующих элементов в исходных словарях.
 
-dict_1 = {"Один": "1","Два": "2","Три": "3"}
-dict_2 = {"Один": "One","Два": "Two","Шесть": "6"}
+dict_1 = {"Два": "2","Три": "3"}
+dict_2 = {"Два": "Two","Шесть": "6"}
 
 result_dict = {}
 
@@ -14,5 +14,12 @@ keys = set(dict_1.keys()).intersection(dict_2.keys())
 for key in keys:
     result_dict[key] = {dict_1[key], dict_2[key]}
 
-print("Получившийся словарь:")
-print(result_dict)
+# print("Получившийся словарь:")
+# print(result_dict)
+
+print(dict_1.setdefault("Один", "5"))
+print(dict_1)
+print(dict_1.setdefault("Один"))
+print(dict_1)
+print(dict_2.update({"Один": "5"}))
+print(dict_2)

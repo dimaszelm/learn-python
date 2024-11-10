@@ -10,14 +10,7 @@
 # "ABABD" и "ABCAB".
 
 txt = input("Введите текст: ")
+print( "1".join(txt))
+print(txt.split(","))
 
-result_dict = {}
 
-for char in txt:
-    if char not in result_dict:
-        modified_txt = txt.replace(char,"")
-        result_dict[char] = modified_txt
-
-print("Получившийся словарь:")
-for key, value in result_dict.items():
-    print(f"'{key}': '{value}'")

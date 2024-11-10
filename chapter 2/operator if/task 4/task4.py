@@ -6,13 +6,13 @@
 nums=eval(input("введите первый числовой список : "))
 nums_2=eval(input("введите второй числовой список : "))
 
-print("Получено значение:", nums, "и", nums_2)
+print(f"Получено значение:{nums} и {nums_2}")
 
 if len(nums) == len(nums_2):
     length = True
     for i in range(len(nums)):
         if nums[i] != nums_2[i]:
-            print("найдено несовпадающее число:", nums[i], "и", nums_2[i])
+            print(f"найдено несовпадающее число: {nums[i]} и {nums_2[i]}")
             length = False
             break
 

@@ -10,12 +10,21 @@ a = input("Введите число a: ")
 b = input("Введите число b: ")
 
 try:
-    if int(a) != 0:
-        print("x = ", (int(b)-1)/(int(a)-1))
-    elif int(a) == 0 and int(b) == 1:
-        print("x - любое число")
-    elif int(a) == 0 and int(b) != 1:
-        print("решений нет")
+    match(int(a), int(b)):
+        case a,b if a != 0:
+            print("x = ", (b - 1) / (int(a) - 1))
+        case a,b if a == 0 and b ==1:
+            print("x - любое число")
+        case a,b if a == 0 and b != 1:
+            print("Решений нет")
+
+
+    # if int(a) != 0:
+    #     print("x = ", (int(b)-1)/(int(a)-1))
+    # elif int(a) == 0 and int(b) == 1:
+    #     print("x - любое число")
+    # elif int(a) == 0 and int(b) != 1:
+    #     print("решений нет")
 except ValueError:
     print("вы ввели некорректное значение!")
 except ZeroDivisionError:

@@ -7,6 +7,7 @@ numb = input("Введите целое число: ")
 
 counts = [0] * 10
 
+print (counts)
 for dig in numb:
     counts[int(dig)] += 1
 
