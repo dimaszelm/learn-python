@@ -7,7 +7,9 @@
 def change_text (text, *n):
     result_text = ""
     for i in n:
-        result_text += "".join(text[i])
+        string = text.split()
+        char = [i for i in string[0]]
+        result_text += "1".join(char)
     return result_text
-text = "Hello world"
+text = "Hello dima"
 print(change_text(text, 0, 1, 4 ,7))

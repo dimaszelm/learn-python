@@ -11,4 +11,10 @@ def  avg_max_min(*n):
     list_result.append(min(n))
     return list_result
 
-print(avg_max_min(1,5,6,7,9))
+mass = []
+mass.append(1)
+mass.append(1)
+print(mass)
+
+
+print(avg_max_min(1,5,1,9,9))
